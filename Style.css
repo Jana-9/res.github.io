@@ -1,0 +1,166 @@
+/* font from google font for website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap');
+
+/* style for page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'arial', sans-serif;
+}
+
+/* body style */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+   align-items: center;
+    background: LightSteelBlue;
+}
+
+
+.Information {
+    position: relative;
+    width: 100%;
+    min-height: 950px;
+    max-width: 950px;
+    grid-template-columns: 2fr 1fr; 
+    background: white;
+    box-shadow: 0 38px 48px rgba(0, 0, 0, 0.4);
+    margin: 50px;
+    display: grid;
+}
+
+/* left side  */
+.Information .left {
+    position: relative;
+    background: Gray; 
+    padding: 40px;
+    color: black; 
+}
+
+.pro_description {
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(225, 250, 250, 0.4);
+    align-items: center;
+   
+}
+
+.pro_description h2 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    font-weight: 570;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.pro_description h2 span {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 350;
+    
+}
+
+
+.Contact {
+    padding-top: 40px;
+}
+
+.topic {
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+   
+}
+.Contact ul {
+    position: relative;
+}
+
+.Contact ul li {
+    position: relative;
+    margin: 9px 1;
+    list-style: none;
+    
+}
+
+.Contact ul li span {
+    font-weight: 350;
+}
+
+.Contact ul li .icon {
+    display: inline-block;
+    font-size: 20px;
+    width: 35px; 
+}
+
+
+.Contact.Education li {
+    margin-bottom: 20px;
+}
+
+.Contact.Education h5 {
+    font-weight: 620;
+}
+
+.Contact.Education h4:nth-child(2) {
+    font-weight: 620;
+}
+
+.Contact.Education h4 {
+    font-weight: 350;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.interest ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+
+/* right side */
+.Information .right {
+    position: relative;
+    padding: 50px;
+    color: black; 
+    background: white; 
+}
+
+.object {
+    margin-bottom: 55px;
+}
+
+.object:last-child {
+    margin-bottom: 1;
+}
+
+.topicTwo  {
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+    
+}
+
+
+
+@media (max-width: 992px) {
+    .Information {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+    }
+}
+
+@media (max-width: 600px) {
+    .object .box {
+        flex-direction: column;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}
